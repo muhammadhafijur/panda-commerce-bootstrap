@@ -11,7 +11,7 @@
 <body>
     <!-- Header Start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="">
@@ -20,19 +20,20 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
-                  </li>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#shoes">Shoes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#backpack">Backpack</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#subscribe">Subscribe</a>
+                    </li>
+                  </ul>
                 </div>
             </div>
           </nav>
@@ -94,7 +95,6 @@
 
     <main>
       <!-- Categories -->
-      <!-- Shoes Section -->
       <section class="container my-5">
           <div class="row g-4">
             <div class="col-lg-4 col-md-6 col-12">
@@ -117,7 +117,8 @@
             </div>
           </div>
       </section>
-      <section class="container">
+      <!-- Shoes Section -->
+      <section class="container" id="shoes">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -160,7 +161,7 @@
       </section>
 
       <!-- Backpack Section -->
-      <section class="container my-5">
+      <section class="container my-5" id="backpack">
         <h2>Backpack</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -204,10 +205,20 @@
           </div>
         </div>
       </section>
+      <!-- Subscribe Section -->
+      <section style="height: 300px;" class="container bg-info d-flex justify-content-center align-items-center rounded-3" id="subscribe">
+        <div>
+          <h1>LET'S STAY IN TOUCH</h1>
+          <p>Get updates on sales, specials and more</p>
+          <input type="text" placeholder="Your Email">
+          <br>
+          <button class="btn btn-warning">SUBMIT</button>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
+    <footer class="mt-5 text-center">
+      <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
 
 
